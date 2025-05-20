@@ -1,0 +1,54 @@
+name: yummy_app
+description: "A new Flutter project."
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.6.1
+
+# Dependencies specify other packages that your package needs in order to work.
+# To automatically upgrade your package dependencies to the latest versions
+# consider running `flutter pub upgrade --major-versions`. Alternatively,
+# dependencies can be manually updated by changing the version numbers below to
+# the latest version available on pub.dev. To see which dependencies have newer
+# versions available, run `flutter pub outdated`.
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^1.0.8
+  intl: ^0.20.2
+  uuid: ^4.5.1
+
+dev_dependencies:
+  flutter_native_splash: ^2.4.1
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^5.0.0
+
+flutter_native_splash:
+  color: '#FFFFFF'
+  image: assets/images/logo/yummy_logo.png
+  android: true
+  ios: true
+
+  android_12:
+    color: '#FFFFFF'
+    image: assets/images/logo/android12_logo.png
+flutter:
+
+
+  uses-material-design: true
+  assets:
+    - assets/images/categories/
+    - assets/images/restaurants/
+    - assets/images/profile_pics/
+    - assets/images/food/
+    - assets/images/logo/
+
